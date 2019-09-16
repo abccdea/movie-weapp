@@ -1,0 +1,39 @@
+<layout
+  posterUrl="{{ review.movie.poster }}"
+  movieName="{{ review.movie.name }}"
+  class="review"
+>
+  <view class="user">
+    <image
+      src="{{ review.userAvatar }}"
+      alt="User avatar"
+    />
+    {{ review.userName }}的影评
+  </view>
+
+  <view class="content" wx:if="{{ review.type == 'text' }}">
+    {{ review.text }}
+  </view>
+
+  <view class="content" wx:if="{{ review.type == 'audio' }}">
+    <audio-review
+      audioLength="{{ review.audioLength }}"
+      audioUrl="{{ review.audioUrl }}"
+    />
+  </view>
+
+  <view wx:if="{{ !userInfo }}">
+    <login bindonLogin="onTapLogin"></login>
+  </view>
+
+  <view class="control" wx:else>
+    <view class="option" bindtap="saveReview">
+      <icon class="iconfont icondaiyan" />
+      <text>收藏影评</text>
+    </view>
+    <view class="option" bindtap="showReviewOptions">
+      <icon class="iconfont iconbianji-01" />
+      <text>写影评</text>
+    </view>
+  </view>
+</layout>

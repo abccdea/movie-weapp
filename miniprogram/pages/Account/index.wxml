@@ -1,0 +1,73 @@
+<wxs src="../../services/utilities.wxs" module="utils" />
+
+<view class="account">
+  <view class="label" wx:if="{{ userInfo }}">
+    <view>我的影评</view>
+    <switch bindchange="switchReview" checked />
+    <view>收藏的影评</view>
+  </view>
+
+  <view wx:if="{{ !userInfo }}">
+    <login bindonLogin="onTapLogin"></login>
+  </view>
+
+  <view wx:else>
+    <view class="no-data" wx:if="{{ reviews.length === 0 }}">
+      <image
+        src="/images/nodata.png"
+        alt="No data"
+      />
+      <text>空空如也</text>
+    </view>
+
+    <scroll-view class="list" wx:else scroll-y scroll-with-animation enable-back-to-top>
+      <view
+        wx:for="{{ reviews }}"
+        wx:for-item="review"
+        wx:key="id"
+      >
+        <navigator
+          class="single"
+          url="/pages/Review/index?id={{ review.id }}"
+        >
+          <image
+            src="{{ review.movie.poster }}"
+            alt="{{ review.movie.name }}"
+          />
+          <view class="info">
+            <view class="name">
+              {{ review.movie.name }}
+            </view>
+
+            <view class="content" wx:if="{{ review.type == 'text' }}">
+              {{ utils.sliceStr(review.text, 0, 15) }} ...
+            </view>
+
+            <view class="content" wx:if="{{ review.type == 'audio' }}">
+              <audio-review audioLength="{{ review.audioLength }}" />
+            </view>
+
+            <view class="user">
+              <image
+                src="{{ review.userAvatar }}"
+                alt="User avatar"
+              />
+              {{ review.userName }}
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+
+  
+
+  <navigator
+    class="footer"
+    open-type="navigateBack"
+    delta="99"
+    url="/pages/Home/index"
+  >
+    回到首页
+  </navigator>
+</view>

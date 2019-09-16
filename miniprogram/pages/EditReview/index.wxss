@@ -1,0 +1,37 @@
+.edit-review textarea {
+  font-size: 36rpx;
+  width: 80%;
+  padding: 30rpx;
+}
+
+.edit-review .textarea-placeholder {
+  font-size: 36rpx;
+  color: #AEAFB2;
+}
+
+.edit-review .record {
+  text-align: center;
+  color: #CCD7DF;
+  border: 1rpx solid #CCD7DF;
+  border-radius: 6rpx;
+  width: 30%;
+  padding: 10rpx 20rpx;
+  margin: 50rpx auto;
+}
+
+.edit-review .recording {
+  color: white;
+  border-color: red;
+  background-color: rgb(248, 63, 63);
+}
+
+.edit-review .footer {
+  position: fixed;
+  bottom: 0rpx;
+  text-align: center;
+  line-height: 100rpx;
+  width: 100%;
+  height: 100rpx;
+  color: #FFFFFF;
+  background-color: #00BD00;
+}

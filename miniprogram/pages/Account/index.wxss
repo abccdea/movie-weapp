@@ -1,0 +1,96 @@
+.account {
+  text-align: center;
+}
+
+.account .label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: rgb(250, 151, 101);
+  font-size: 35rpx;
+  font-weight: bold;
+  margin: 30rpx auto;
+}
+
+.account .label switch {
+  margin: 20rpx;
+}
+
+.account .no-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.account .no-data image {
+  width: 70%;
+  margin: 100rpx auto;
+}
+
+.account .no-data text {
+  margin: 10rpx auto;
+}
+
+.account .list {
+  display: flex;
+  flex-direction: column;
+  height: 900rpx;
+}
+
+.account .list .single {
+  width: 92%;
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #ECECEC;
+  background-color: #FFFFFF;
+  height: 320rpx;
+}
+
+.account .list .single image {
+  width: 330rpx;
+  height: 100%;
+  border: 1rpx solid #ECECEC;
+}
+
+.account .list .single .info {
+  padding-left: 45rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.account .list .single .info .name {
+  font-weight: bold;
+  margin: 60rpx 0rpx 20rpx;
+}
+
+.account .list .single .info .content {
+  font-size: 35rpx;
+  margin-bottom: 30rpx;
+}
+
+.account .list .single .info .user {
+  display: flex;
+  align-items: center;
+}
+
+.account .list .single .info .user image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.account .footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-top: 1rpx solid lightgray;
+}

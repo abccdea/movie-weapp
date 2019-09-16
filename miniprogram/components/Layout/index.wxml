@@ -1,0 +1,13 @@
+<view class="layout">
+  <image
+    class="poster"
+    src="{{ posterUrl }}"
+    alt="{{ movieName }}"
+  />
+
+  <view class="title">
+    {{ movieName }}
+  </view>
+
+  <slot />
+</view>

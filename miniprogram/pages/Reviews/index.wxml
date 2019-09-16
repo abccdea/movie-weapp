@@ -1,0 +1,42 @@
+<view class="reviews">
+  <scroll-view class="list" scroll-y scroll-with-animation enable-back-to-top>
+    <navigator
+      class="card"
+      wx:for="{{ reviews }}"
+      wx:key="_id"
+      url="/pages/Review/index?id={{ item.id }}"
+    >
+      <view class="user">
+        <image
+          src="{{ item.userAvatar }}"
+          alt="User avatar"
+        />
+        {{ item.userName }}
+      </view>
+      
+      <view class="content" wx:if="{{ item.type == 'text' }}">
+        {{ item.text }}
+      </view>
+
+      <view class="content" wx:if="{{ item.type == 'audio' }}">
+        <audio-review audioLength="{{ item.audioLength }}" />
+      </view>
+    </navigator>
+  </scroll-view>
+
+  <view class="no-data" wx:if="{{ reviews.length === 0 }}">
+    <image
+      src="/images/nodata.png"
+      alt="No data"
+    />
+  </view>
+
+  <navigator
+    class="footer"
+    open-type="navigateBack"
+    delta="99"
+    url="/pages/Home/index"
+  >
+    回到首页
+  </navigator>
+</view>

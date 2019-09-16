@@ -1,0 +1,8 @@
+var sliceStr = function (text, begin, end) {
+  if (!text) return '';
+  return text.slice(begin, end);
+};
+
+module.exports = {
+  sliceStr: sliceStr
+};

@@ -1,0 +1,12 @@
+{
+  "name": "getRecommended",
+  "version": "1.0.0",
+  "description": "Randomly return a movie with a user review. If no reviews are found, return one of movies in the database.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zuowen Wang",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

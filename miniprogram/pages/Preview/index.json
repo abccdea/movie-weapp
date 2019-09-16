@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "layout": "/components/Layout/index",
+    "audio-review": "/components/Audio/index",
+    "login": "/components/Login/index"
+  },
+  "navigationBarTitleText": "影评预览"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "getReviews",
+  "version": "1.0.0",
+  "description": "Get a list of reviews about a movie.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zuowen Wang",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

@@ -1,0 +1,43 @@
+<view class="home">
+  <view
+    wx:if="{{ movie }}"
+    class="movie"
+  >
+    <navigator url="/pages/Movie/index?id={{ movie.id }}">
+      <image
+        src="{{ movie.image }}"
+        alt="{{ movie.name }}"
+        class="movie-image"
+        mode="widthFix"
+      />
+      <text class="movie-name">
+        {{ movie.name }}
+      </text>
+    </navigator>
+  </view>
+
+  <navigator
+    class="recommender"
+    url="/pages/Review/index?id={{ movie.review.id }}"
+  >
+    <image
+      src="{{ movie.review.userAvatar || '/images/udacity.jpg'}}"
+      alt="Recommender"
+      class="avatar"
+    />
+    <view class="message">
+      {{ movie.review.official ? "优达" : movie.review.userName }}给您推荐了一部电影
+    </view>
+  </navigator>
+
+  <view class="footer">
+    <navigator url="/pages/Movies/index">
+      <icon class="iconfont iconvideo-gallery" />
+      <text>热门</text>
+    </navigator>
+    <navigator url="/pages/Account/index">
+      <icon class="iconfont iconportrait" />
+      <text>我的</text>
+    </navigator>
+  </view>
+</view>

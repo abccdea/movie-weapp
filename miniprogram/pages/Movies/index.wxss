@@ -1,0 +1,53 @@
+.movies {
+  padding: 30rpx;
+}
+
+.movies .no-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies .no-data image {
+  width: 70%;
+  margin: 100rpx auto;
+}
+
+.movies .no-data text {
+  margin: 10rpx auto;
+}
+
+.movies .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies .list .single {
+  width: 92%;
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #ECECEC;
+  background-color: #FFFFFF;
+  height: 280rpx;
+}
+
+.movies .list .single image {
+  width: 200rpx;
+  height: 100%;
+  border: 1rpx solid #ECECEC;
+}
+
+.movies .list .single .info {
+  padding-left: 45rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.movies .list .single .info .name {
+  font-weight: bold;
+  margin: 60rpx 0rpx 40rpx;
+}
+
+.movies .list .single .info .category {
+  font-size: 30rpx;
+}

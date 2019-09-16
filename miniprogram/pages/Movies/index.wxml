@@ -1,0 +1,35 @@
+<view class="movies">
+  <view class="no-data" wx:if="{{ movies.length === 0 }}">
+    <image
+      src="/images/nodata.png"
+      alt="No data"
+    />
+    <text>暂无热门电影数据，请稍后重试！</text>
+  </view>
+
+  <view class="list" wx:else>
+    <view
+      wx:for="{{ movies }}"
+      wx:for-item="movie"
+      wx:key="id"
+    >
+      <navigator
+        class="single"
+        url="/pages/Movie/index?id={{ movie.id }}"
+      >
+        <image
+          src="{{ movie.image }}"
+          alt="{{ movie.name }}"
+        />
+        <view class="info">
+          <view class="name">
+            {{ movie.name }}
+          </view>
+          <view class="category">
+            类型：{{ movie.category }}
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

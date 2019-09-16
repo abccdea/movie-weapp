@@ -1,0 +1,103 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wx47ceb217658ea296",
+	"projectname": "movie-weapp",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "Account",
+					"pathName": "pages/Account/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "Movies",
+					"pathName": "pages/Movies/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Movie",
+					"pathName": "pages/Movie/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Reviews",
+					"pathName": "pages/Reviews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "Review (Text)",
+					"pathName": "pages/Review/index",
+					"query": "id=UgC9SV18ZlHeRN2q4xlUvHu30KXDE7WyTgTwiHiVu41FlQKw",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Review (Audio)",
+					"pathName": "pages/Review/index",
+					"query": "id=l8ccfsfqZjRPea9Vir15q3DCKktzk2LrKucyI56xsk7XdJ4j",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "EditReview (Text)",
+					"pathName": "pages/EditReview/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "EditReview (Audio)",
+					"pathName": "pages/EditReview/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Preview",
+					"pathName": "pages/Preview/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

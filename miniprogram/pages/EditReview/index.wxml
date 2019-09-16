@@ -1,0 +1,36 @@
+<view class="edit-review">
+  <layout
+    posterUrl="{{ moviePoster }}"
+    movieName="{{ movieName }}"
+  >
+    <view wx:if="{{ !userInfo }}">
+      <login bindonLogin="onTapLogin"></login>
+    </view>
+
+    <view wx:else>
+      <textarea
+        placeholder-class="textarea-placeholder"
+        placeholder="输入你的影评内容..."
+        maxlength="255"
+        bindinput="onInput"
+        wx:if="{{ mode === 'text' }}"
+      />
+
+      <view
+        wx:if="{{ mode === 'audio' }}"
+        class="record {{ recording ? 'recording' : '' }}"
+        bindtap="{{ recording ? 'stopRecording' : 'startRecording' }}"
+      >
+        {{ recording ? '结束' : '录音' }}
+      </view>
+    </view>
+  </layout>
+
+  <view
+    class="footer"
+    bindtap="preview"
+    wx:if="{{ userInfo }}"
+  >
+    完成
+  </view>
+</view>

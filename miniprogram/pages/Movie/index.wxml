@@ -1,0 +1,41 @@
+<wxs src="../../services/utilities.wxs" module="utils" />
+
+<layout
+  posterUrl="{{ movie.image }}"
+  movieName="{{ movie.name }}"
+  class="movie"
+>
+  <view class="description">
+    <view wx:if="{{ showMore }}">
+      <view>{{ movie.description }}</view>
+      <view
+        class="display"
+        wx:if="{{ movie.description }}"
+        bindtap="switchTextDisplay"
+      >
+        Collapse
+      </view>
+    </view>
+    <view wx:else>
+      <view>{{ utils.sliceStr(movie.description, 0, 75) }} ...</view>
+      <view
+        class="display"
+        wx:if="{{ movie.description }}"
+        bindtap="switchTextDisplay"
+      >
+        Show more
+      </view>
+    </view>
+  </view>
+
+  <view class="control">
+    <navigator class="option" url="/pages/Reviews/index?id={{ movieId }}">
+      <icon class="iconfont iconphoto" />
+      <text>查看影评</text>
+    </navigator>
+    <view class="option" bindtap="showReviewOptions">
+      <icon class="iconfont iconzhanghao" />
+      <text>添加影评</text>
+    </view>
+  </view>
+</layout>

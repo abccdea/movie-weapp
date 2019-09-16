@@ -1,0 +1,12 @@
+{
+  "name": "getSaved",
+  "version": "1.0.0",
+  "description": "Get a list of saved reviews.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zuowen Wang",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

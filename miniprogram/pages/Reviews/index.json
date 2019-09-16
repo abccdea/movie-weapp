@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "audio-review": "/components/Audio/index"
+  },
+  "navigationBarTitleText": "影评列表"
+}

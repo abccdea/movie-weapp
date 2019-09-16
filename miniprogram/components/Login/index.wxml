@@ -1,0 +1,8 @@
+<view class="login">
+  <button
+    open-type="getUserInfo"
+    bindgetuserinfo="onTapLogin"
+  >
+    Sign In
+  </button>
+</view>

@@ -1,0 +1,22 @@
+@import "../../iconfont.wxss";
+
+.audio-review {
+  display: flex;
+  align-items: center;
+  padding: 3rpx 10rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: rgb(91, 231, 159);
+  border: 1rpx solid rgba(91, 231, 159, 0.555);
+  border-radius: 15rpx;
+}
+
+.playing {
+  border-color: rgb(229, 231, 91, 0.555);
+  background-color: rgb(229, 231, 91);
+}
+
+.audio-review .iconfont{
+  margin: 0rpx 20rpx;
+  padding-bottom: 15rpx;
+}

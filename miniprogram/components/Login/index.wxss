@@ -1,0 +1,7 @@
+.login button {
+  width: 300rpx;
+  font-size: 30rpx;
+  color: white;
+  background-color: #06C15F;
+  margin: 30rpx auto;
+}

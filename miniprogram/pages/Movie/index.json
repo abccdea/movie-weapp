@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "layout": "/components/Layout/index"
+  },
+  "navigationBarTitleText": "电影详情"
+}

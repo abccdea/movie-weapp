@@ -1,0 +1,12 @@
+{
+  "name": "saveReview",
+  "version": "1.0.0",
+  "description": "Save a review.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zuowen Wang",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

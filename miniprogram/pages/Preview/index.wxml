@@ -1,0 +1,39 @@
+<layout
+  posterUrl="{{ moviePoster }}"
+  movieName="{{ movieName }}"
+  class="preview"
+>
+  <view class="user">
+    <image
+      src="{{ userAvatar }}"
+      alt="User avatar"
+    />
+    {{ userName }}的影评
+  </view>
+
+  <view class="content" wx:if="{{ mode == 'text' }}">
+    {{ text }}
+  </view>
+
+  <view class="content" wx:if="{{ mode == 'audio' }}">
+    <audio-review
+      audioLength="{{ audioLength }}"
+      audioUrl="{{ audio }}"
+    />
+  </view>
+
+  <view wx:if="{{ !userInfo }}">
+    <login bindonLogin="onTapLogin"></login>
+  </view>
+
+  <view class="control" wx:else>
+    <view class="option" bindtap="edit">
+      <icon class="iconfont iconyemianbianji-" />
+      <text>重新编辑</text>
+    </view>
+    <view class="option" bindtap="addReview">
+      <icon class="iconfont iconshanghua-01" />
+      <text>发表影评</text>
+    </view>
+  </view>
+</layout>

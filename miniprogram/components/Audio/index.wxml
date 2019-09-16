@@ -1,0 +1,8 @@
+<view
+  class="audio-review {{ playing ? 'playing' : '' }}"
+  style="width: {{ 30 + audioLength / 60 * 60 }}%;"
+  bindtap="{{ playing? 'stopAudio' : 'playAudio' }}"
+>
+  <icon class="iconfont iconkefu" />
+	<view>{{ audioLength }}s</view>
+</view>

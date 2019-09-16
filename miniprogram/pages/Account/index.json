@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "audio-review": "/components/Audio/index",
+    "login": "/components/Login/index"
+  },
+  "navigationBarTitleText": "我的"
+}

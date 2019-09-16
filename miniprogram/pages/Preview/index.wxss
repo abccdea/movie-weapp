@@ -1,0 +1,44 @@
+.preview .user {
+  display: flex;
+  align-items: center;
+  padding: 0rpx 50rpx;
+  margin-bottom: 30rpx;
+}
+
+.preview .user image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.preview .content {
+  font-size: 35rpx;
+  padding: 0rpx 50rpx;
+  margin-bottom: 100rpx;
+}
+
+.preview .control {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60rpx;
+  color: gray;
+}
+
+.preview .control .option {
+  border: 1rpx solid lightgray;
+  border-radius: 6rpx;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.preview .control text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+}
+
+.preview .control .iconfont {
+  padding-bottom: 18rpx;
+}

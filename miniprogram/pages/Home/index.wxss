@@ -1,0 +1,57 @@
+.home {
+  padding-top: 10rpx;
+}
+
+.home .movie {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .movie .movie-image {
+  width: 68%;
+  margin: 5rpx auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+}
+
+.home .movie .movie-name {
+  margin: 5rpx auto;
+  text-align: center;
+  display: block;
+}
+
+.home .recommender {
+  margin: 35rpx auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .recommender .avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.home .recommender .message {
+  padding: 0 20rpx;
+  font-size: 35rpx;
+}
+
+.home .footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-top: 1rpx solid lightgray;
+}
+
+.home .footer .iconfont {
+  margin: 0 20rpx;
+}

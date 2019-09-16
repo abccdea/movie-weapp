@@ -1,0 +1,12 @@
+{
+  "name": "getMovies",
+  "version": "1.0.0",
+  "description": "Fetch a list of popular movies.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Zuowen Wang",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}
